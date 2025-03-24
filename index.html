@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Diskon Harga Baju</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Kalkulator Diskon Harga Baju</h1>
+
+    <div class="input-section">
+        <label for="price">Harga Awal (Rp)</label>
+        <input type="number" id="price" placeholder="Masukkan harga awal baju">
+
+        <label for="discount">Diskon (%)</label>
+        <input type="number" id="discount" placeholder="Masukkan persen diskon">
+
+        <button onclick="calculateDiscount()">Hitung Diskon</button>
+    </div>
+
+    <div class="result" id="result">
+        <div class="title">HASIL PERHITUNGAN DISKON</div>
+        <div class="grid-container">
+            <div class="grid-item">Harga Awal <span id="resultPrice"></span></div>
+            <div class="grid-item">Persen Diskon <span id="resultDiscount"></span></div>
+            <div class="grid-item">Jumlah Diskon <span id="resultDiscountAmount"></span></div>
+            <div class="grid-item">Harga Setelah Diskon <span id="resultFinalPrice"></span></div>
+        </div>
+        <button onclick="printPage()">Print Halaman</button>
+    </div>
+
+    <script src="script.js"></script>
+</div>
+
+</body>
+</html>
